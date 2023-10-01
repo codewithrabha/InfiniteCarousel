@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    & .carousel-wrapper {
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        background-color: rgb(255, 218, 232);
+
+        & .carousel {
+            display: flex;
+            gap: 20px;
+            width: fit-content;
+            height: 100%;
+            align-items: center;
+
+            & .carousel-items {
+                display: flex;
+                justify-content: center;
+                width: 250px;
+
+            }
+
+        }
+    }
+}
