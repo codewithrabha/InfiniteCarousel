@@ -34,14 +34,15 @@
             loop = infiniteLoop(items, { paused: false, repeat: -1, reversed: true, });
 
         itemWrapper.addEventListener('mouseover', () => {
-
-            loop.pause();
+            gsap.to(loop, { timeScale: 0, overwrite: true })
+            // loop.pause();
 
         })
 
         itemWrapper.addEventListener('mouseout', () => {
 
-            loop.resume();
+            gsap.to(loop, { timeScale: -1, overwrite: true })
+            // loop.resume();
 
         });
     </script>
